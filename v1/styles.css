@@ -1499,6 +1499,55 @@ body.intro-lock {
 }
 
 
+/* ---- Showcase floating button (back to hub) ---- */
+.showcase-fab {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 9000;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  background: var(--amber);
+  color: #1a1205;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(232, 163, 23, 0.35);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s;
+}
+
+.showcase-fab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(232, 163, 23, 0.35);
+}
+
+.showcase-fab-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+@media (max-width: 480px) {
+  .showcase-fab-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  .showcase-fab {
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    justify-content: center;
+  }
+}
+
 /* Accessibility */
 :focus-visible {
   outline: 2px solid var(--amber);
