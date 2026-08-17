@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flight Path | Burien Neighborhood Bar</title>
+  <meta name="description" content="Flight Path is Burien's neighborhood bar — local craft beer, uncompromising food, live music, comedy, trivia, karaoke, pool, and darts. 1832 S 120th St, Burien, WA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://i0.wp.com/flightpathburien.com/wp-content/uploads/2026/03/Flight_Path_Logo_2025.png?resize=64%2C64&ssl=1" />
+  <!-- DEV: session skip disabled so intro plays every refresh. Restore later. -->
+</head>
+<body>
+  <!-- Intro: Option D · Low-pass loop (Sea-Tac traffic) -->
+  <div id="intro-splash" class="intro-splash intro-lowpass" aria-hidden="true">
+    <div class="corridor-line" aria-hidden="true"></div>
+    <div class="traffic" aria-hidden="true">
+      <div class="mini m1">
+        <img class="jet" src="../logo-anim/plane.png" alt="" width="320" height="240" />
+      </div>
+      <div class="mini m2">
+        <img class="jet" src="../logo-anim/plane.png" alt="" width="320" height="240" />
+      </div>
+    </div>
+    <div class="hero-pass" aria-hidden="true">
+      <img class="jet" src="../logo-anim/plane.png" alt="" width="320" height="240" />
+    </div>
+    <div class="intro-title">
+      <span class="intro-name">Flight Path</span>
+      <span class="intro-sub">Under the Sea-Tac flight path · Burien, WA</span>
+    </div>
+    <p class="intro-skip-hint">Click or press Esc to skip</p>
+  </div>
+
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Flight Path home">
+        <img
+          src="https://i0.wp.com/flightpathburien.com/wp-content/uploads/2026/03/Flight_Path_Logo_2025-scaled.png?fit=400%2C200&ssl=1"
+          alt="Flight Path logo"
+          width="160"
+          height="80"
+        />
+        <span class="logo-text">
+          Flight Path
+          <small>Burien, WA</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#beer">Beer</a>
+        <a href="#food">Food</a>
+        <a href="#entertainment">Entertainment</a>
+        <a href="menu.html">Menu</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="header-phone" href="tel:+12067517861">(206) 751-7861</a>
+        <a class="btn btn-primary btn-sm" href="#visit">Plan Your Visit</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src="https://i0.wp.com/flightpathburien.com/wp-content/uploads/2025/04/IMG_5285-scaled.jpeg?fit=2000%2C1400&ssl=1"
+          alt=""
+          width="2000"
+          height="1400"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge">Now Boarding · Burien Neighborhood Bar</div>
+        <h1>Your Local Bar<br /><em>Just Got Better</em></h1>
+        <div class="runway" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p class="hero-sub">
+          Live music, comedy, trivia, karaoke, local brews, stellar food, and plenty of games — everything you want in a neighborhood bar.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="menu.html">View Food Menu</a>
+          <a class="btn btn-ghost" href="#entertainment">Tonight’s Vibe</a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <strong>1832 S 120th St</strong>
+            Burien, WA 98168
+          </div>
+          <div>
+            <strong><a href="tel:+12067517861">(206) 751-7861</a></strong>
+            Call for events &amp; parties
+          </div>
+          <div>
+            <strong>Open Late</strong>
+            Kitchen till last call
+          </div>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <span>Scroll</span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="feature-strip" aria-hidden="true">
+      <div class="marquee">
+        <span>Local Craft Beer</span>
+        <span>Live Music</span>
+        <span>Comedy Nights</span>
+        <span>Karaoke</span>
+        <span>Trivia</span>
+        <span>Pool &amp; Darts</span>
+        <span>Hot Food Late</span>
+        <span>Nitro Taps</span>
+        <span>Local Craft Beer</span>
+        <span>Live Music</span>
+        <span>Comedy Nights</span>
+        <span>Karaoke</span>
+        <span>Trivia</span>
+        <span>Pool &amp; Darts</span>
+        <span>Hot Food Late</span>
+        <span>Nitro Taps</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-intro reveal">
+          <div class="section-label">About Us</div>
+          <h2 class="section-title">The Flight Path Team</h2>
+          <p>
+            We’re a tight-knit group of friends and former co-workers who wanted to build a great bar for the Burien neighborhood.
+            Dan, the owner, brings eighteen years of restaurant-opening and managing experience — and a team that’s ready to serve you.
+          </p>
+          <p style="margin-top: 1rem;">
+            Come for a lively, welcoming room. Catch up with friends, meet new ones, and stay for the games between rounds.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">✈</div>
+            <h3>Neighborhood Hub</h3>
+            <p>Your go-to Burien bar for after-work pints, weekend hangs, and late-night energy — without the downtown hassle.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">♪</div>
+            <h3>Live Stage</h3>
+            <p>One of the best rooms for live music in the PNW — plus comedy, karaoke, and trivia to keep the calendar full.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">◎</div>
+            <h3>Play &amp; Stay</h3>
+            <p>Pool tables, electronic darts, Big Buck Hunter, Golden Tee, skeeball, and the world’s largest Pac-Man game.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEER -->
+    <section class="section" id="beer" style="background: var(--bg-elevated);">
+      <div class="container">
+        <div class="split reverse">
+          <div class="split-media reveal">
+            <img
+              src="https://i0.wp.com/flightpathburien.com/wp-content/uploads/2016/08/flight-path-local-beer.jpg?fit=1200%2C800&ssl=1"
+              alt="Craft beer taps at Flight Path"
+              width="1200"
+              height="800"
+              loading="lazy"
+            />
+            <span class="tag">12 Handles · 2 Nitro</span>
+          </div>
+          <div class="split-body reveal">
+            <div class="section-label">On Tap</div>
+            <h2 class="section-title">A Local Bar<br />With Local Beers</h2>
+            <p class="section-lead">
+              Twelve rotating handles — eleven local and craft, one domestic — with two always on Nitro.
+              Bottles and cans cover the rest of your craving.
+            </p>
+            <div class="stats">
+              <div class="stat">
+                <strong>12</strong>
+                <span>Tap handles</span>
+              </div>
+              <div class="stat">
+                <strong>2</strong>
+                <span>Nitro pours</span>
+              </div>
+              <div class="stat">
+                <strong>11</strong>
+                <span>Local / craft</span>
+              </div>
+            </div>
+            <a class="btn btn-ghost" href="#visit">Find Us Tonight</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOD -->
+    <section class="section" id="food">
+      <div class="container">
+        <div class="split">
+          <div class="split-media reveal">
+            <img
+              src="https://i0.wp.com/flightpathburien.com/wp-content/uploads/2016/08/flight-path-food.jpg?fit=1200%2C800&ssl=1"
+              alt="Burger and fries at Flight Path"
+              width="1200"
+              height="800"
+              loading="lazy"
+            />
+            <span class="tag">HH specials 4–6pm</span>
+          </div>
+          <div class="split-body reveal">
+            <div class="section-label">Kitchen</div>
+            <h2 class="section-title">Uncompromising<br />Food</h2>
+            <p class="section-lead">
+              Best-of-class bar food, always hot. Burgers, baskets, flatbreads, pastas, and more.
+              When the full kitchen closes, melty paninis still fly until last call.
+            </p>
+            <ul style="margin: 1.5rem 0 2rem; color: var(--cream-muted); display: grid; gap: 0.5rem;">
+              <li>→ Flight Path burgers &amp; loaded fries</li>
+              <li>→ Wings, nachos, and late-night baskets</li>
+              <li>→ Flatbreads, wraps, salads &amp; pasta</li>
+              <li>→ $1 off appetizers, happy hour 4–6pm</li>
+            </ul>
+            <a class="btn btn-primary" href="menu.html">Full Food Menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENTERTAINMENT -->
+    <section class="section" id="entertainment" style="background: var(--bg-elevated);">
+      <div class="container">
+        <div class="reveal" style="max-width: 36rem; margin-bottom: 0.5rem;">
+          <div class="section-label">Entertainment</div>
+          <h2 class="section-title">Endless Reasons<br />To Stay</h2>
+          <p class="section-lead">
+            From live bands to comedy sets, games, trivia, and karaoke — we’ve got you covered for a full night out.
+          </p>
+        </div>
+
+        <div class="entertain-grid">
+          <article class="entertain-main reveal">
+            <img
+              src="https://i0.wp.com/flightpathburien.com/wp-content/uploads/2025/04/IMG_5285-scaled.jpeg?fit=1400%2C1000&ssl=1"
+              alt="Live music at Flight Path"
+              width="1400"
+              height="1000"
+              loading="lazy"
+            />
+            <div class="overlay">
+              <h3>Live Music Room</h3>
+              <p>One of the best rooms for live music in the PNW. Catch local acts and special nights on the calendar.</p>
+            </div>
+          </article>
+          <div class="entertain-side">
+            <article class="entertain-tile reveal">
+              <img
+                src="https://i0.wp.com/flightpathburien.com/wp-content/uploads/2017/11/flight-path-pool-tables.jpg?fit=900%2C600&ssl=1"
+                alt="Pool tables"
+                width="900"
+                height="600"
+                loading="lazy"
+              />
+              <div class="label">
+                <h3>Pool Tables</h3>
+                <p>Two tables · games just 50¢</p>
+              </div>
+            </article>
+            <article class="entertain-tile reveal">
+              <img
+                src="https://i0.wp.com/flightpathburien.com/wp-content/uploads/2017/11/flight-path-darts.jpg?fit=900%2C600&ssl=1"
+                alt="Electronic dartboards"
+                width="900"
+                height="600"
+                loading="lazy"
+              />
+              <div class="label">
+                <h3>Darts &amp; Games</h3>
+                <p>Electronic boards, video games &amp; more</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="schedule reveal">
+          <div class="schedule-item">
+            <div class="day">Mondays</div>
+            <h4>Karaoke</h4>
+            <p>Grab the mic &amp; a cold one</p>
+          </div>
+          <div class="schedule-item">
+            <div class="day">Wednesdays</div>
+            <h4>Comedy</h4>
+            <p>Laughs on the main floor</p>
+          </div>
+          <div class="schedule-item">
+            <div class="day">Thursdays</div>
+            <h4>Live Music</h4>
+            <p>Bands take the stage</p>
+          </div>
+          <div class="schedule-item">
+            <div class="day">Weekends</div>
+            <h4>Vibes On</h4>
+            <p>Trivia, games &amp; late nights</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAMES DETAIL -->
+    <section class="section" id="games">
+      <div class="container">
+        <div class="reveal" style="text-align: center; max-width: 34rem; margin: 0 auto 0.5rem;">
+          <div class="section-label" style="justify-content: center;">Your Place to Play</div>
+          <h2 class="section-title">Meet Friends.<br />Have Some Fun.</h2>
+          <p class="section-lead" style="margin-inline: auto;">
+            Flight Path isn’t only about great beer, cocktails, and food — it’s where the community gathers.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🎱</div>
+            <h3>Pool</h3>
+            <p>Two full-size tables. Rack ’em for just 50¢ a game — challenge friends or make new ones.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🎯</div>
+            <h3>Darts</h3>
+            <p>Cricket, Shanghai, Killer — pick your game on our electronic dartboards.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🎮</div>
+            <h3>Arcade &amp; More</h3>
+            <p>Big Buck Hunter HD, Golden Tee, skeeball, and the world’s largest Pac-Man — accuracy optional.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section" id="visit" style="background: var(--bg-elevated);">
+      <div class="container">
+        <div class="reveal">
+          <div class="section-label">Visit</div>
+          <h2 class="section-title">Find Your Way In</h2>
+          <p class="section-lead">Burien’s neighborhood bar is ready when you are. Hours can shift for private events — call ahead if you’re planning a group.</p>
+        </div>
+
+        <div class="visit-grid">
+          <div class="visit-card reveal">
+            <h3>Hours</h3>
+            <ul class="hours-list">
+              <li><span class="day">Monday</span><span class="time">3:00 PM – 12:00 AM</span></li>
+              <li><span class="day">Tuesday</span><span class="time closed">Closed</span></li>
+              <li><span class="day">Wednesday</span><span class="time">3:00 PM – 12:00 AM</span></li>
+              <li><span class="day">Thursday</span><span class="time">3:00 PM – 12:00 AM</span></li>
+              <li><span class="day">Friday</span><span class="time">3:00 PM – 2:00 AM</span></li>
+              <li><span class="day">Saturday</span><span class="time">3:00 PM – 2:00 AM</span></li>
+              <li><span class="day">Sunday</span><span class="time">3:00 PM – 12:00 AM</span></li>
+            </ul>
+            <p class="menu-note" style="margin-top: 1.5rem;">
+              <strong>Happy Hour:</strong> $1 off appetizers, 4–6 PM daily when open.
+              Kitchen stays hot late — paninis available until last call.
+            </p>
+          </div>
+
+          <div class="visit-card reveal">
+            <h3>Location &amp; Contact</h3>
+            <div class="contact-block">
+              <div class="contact-row">
+                <div class="contact-icon" aria-hidden="true">📍</div>
+                <div>
+                  <strong>Address</strong>
+                  <p>1832 S 120th St<br />Burien, WA 98168</p>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon" aria-hidden="true">☎</div>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+12067517861">(206) 751-7861</a>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon" aria-hidden="true">◎</div>
+                <div>
+                  <strong>Social</strong>
+                  <p>
+                    <a href="https://www.facebook.com/flightpathburien" target="_blank" rel="noopener">Facebook</a>
+                    ·
+                    <a href="https://www.instagram.com/flightpathburien/" target="_blank" rel="noopener">Instagram</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="map-embed">
+              <iframe
+                title="Map to Flight Path Burien"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=1832%20S%20120th%20St%2C%20Burien%2C%20WA%2098168&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">
+            Flight Path
+            <small>Burien, WA</small>
+          </div>
+          <p>Local beers, solid food, live entertainment, and games — the Burien neighborhood bar that does it all.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/flightpathburien" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8c0-.6.4-1 1-1z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/flightpathburien/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2A3.2 3.2 0 1112 8.8a3.2 3.2 0 010 6.4zm6.4-8.5a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0zM12 4.2c-1.7 0-1.9 0-2.6.1-.7 0-1.2.1-1.6.3-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.3.9-.3 1.6 0 .7-.1.9-.1 2.6s0 1.9.1 2.6c0 .7.1 1.2.3 1.6.2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.2.9.3 1.6.3.7 0 .9.1 2.6.1s1.9 0 2.6-.1c.7 0 1.2-.1 1.6-.3.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-.9.3-1.6 0-.7.1-.9.1-2.6s0-1.9-.1-2.6c0-.7-.1-1.2-.3-1.6-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-.9-.3-1.6-.3-.7 0-.9-.1-2.6-.1zm0-1.7c1.7 0 2 0 2.7.1.8 0 1.4.2 1.9.4.6.2 1 .5 1.5 1s.8.9 1 1.5c.2.5.3 1.1.4 1.9.1.7.1 1 .1 2.7s0 2-.1 2.7c0 .8-.2 1.4-.4 1.9-.2.6-.5 1-1 1.5s-.9.8-1.5 1c-.5.2-1.1.3-1.9.4-.7.1-1 .1-2.7.1s-2 0-2.7-.1c-.8 0-1.4-.2-1.9-.4-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.2-.5-.3-1.1-.4-1.9-.1-.7-.1-1-.1-2.7s0-2 .1-2.7c0-.8.2-1.4.4-1.9.2-.6.5-1 1-1.5s.9-.8 1.5-1c.5-.2 1.1-.3 1.9-.4.7-.1 1-.1 2.7-.1z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#about">About</a>
+          <a href="#beer">Beer</a>
+          <a href="#food">Food</a>
+          <a href="#entertainment">Entertainment</a>
+          <a href="menu.html">Full Menu</a>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <p>1832 S 120th St</p>
+          <p>Burien, WA 98168</p>
+          <a href="tel:+12067517861">(206) 751-7861</a>
+        </div>
+        <div class="footer-col">
+          <h4>Hours Snapshot</h4>
+          <p>Mon, Wed–Sun from 3 PM</p>
+          <p>Tue closed</p>
+          <p>Fri–Sat until 2 AM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2012 – 2026 Flight Path · Burien, WA</span>
+        <span>Redesign concept · All rights reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

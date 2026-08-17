@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Menu | Flight Path Burien</title>
+  <meta name="description" content="Flight Path food menu — burgers, appetizers, pastas, sandwiches, baskets, salads, and flatbreads. Happy hour 4–6pm. Burien, WA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://i0.wp.com/flightpathburien.com/wp-content/uploads/2026/03/Flight_Path_Logo_2025.png?resize=64%2C64&ssl=1" />
+</head>
+<body class="menu-page">
+  <header class="site-header scrolled" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Flight Path home">
+        <img
+          src="https://i0.wp.com/flightpathburien.com/wp-content/uploads/2026/03/Flight_Path_Logo_2025-scaled.png?fit=400%2C200&ssl=1"
+          alt="Flight Path logo"
+          width="160"
+          height="80"
+        />
+        <span class="logo-text">
+          Flight Path
+          <small>Burien, WA</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html#about">About</a>
+        <a href="index.html#beer">Beer</a>
+        <a href="index.html#food">Food</a>
+        <a href="index.html#entertainment">Entertainment</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="index.html#visit">Visit</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="header-phone" href="tel:+12067517861">(206) 751-7861</a>
+        <a class="btn btn-primary btn-sm" href="index.html#visit">Plan Your Visit</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <div class="section-label" style="justify-content: center;">Anytime Menu</div>
+        <h1>Uncompromising Food</h1>
+        <div class="runway" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p>Great bar food, always hot. Even after the full kitchen winds down, paninis stay available until last call.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" data-tab="apps" role="tab" aria-selected="true">Appetizers</button>
+          <button class="menu-tab" data-tab="burgers" role="tab" aria-selected="false">Burgers</button>
+          <button class="menu-tab" data-tab="pasta" role="tab" aria-selected="false">Pasta</button>
+          <button class="menu-tab" data-tab="sandwiches" role="tab" aria-selected="false">Sandwiches</button>
+          <button class="menu-tab" data-tab="baskets" role="tab" aria-selected="false">Baskets</button>
+          <button class="menu-tab" data-tab="salads" role="tab" aria-selected="false">Salads</button>
+          <button class="menu-tab" data-tab="flatbreads" role="tab" aria-selected="false">Flatbreads</button>
+        </div>
+
+        <!-- APPETIZERS -->
+        <div class="menu-category active" id="apps" role="tabpanel">
+          <div class="menu-category-block">
+            <h2>Appetizers</h2>
+            <p class="cat-note">$1 off happy hour · 4–6 PM</p>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <h4>Order o’ Fries</h4>
+                <span class="price">7.95</span>
+                <p class="desc">Crispy fried goodness!</p>
+              </div>
+              <div class="menu-item">
+                <h4>Roasted Garlic Fries</h4>
+                <span class="price">8.95</span>
+                <p class="desc">All that fried goodness… with garlic!</p>
+              </div>
+              <div class="menu-item">
+                <h4>Flight Path Fries</h4>
+                <span class="price">12.95</span>
+                <p class="desc">Loaded with bacon, cheese, tomatoes, sour cream and jalapeños!</p>
+              </div>
+              <div class="menu-item">
+                <h4>Asada Fries</h4>
+                <span class="price">13.95</span>
+                <p class="desc">Crispy fries topped with steak, sour cream, cheese and guacamole.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Onion Rings</h4>
+                <span class="price">9.95</span>
+                <p class="desc">Get ’em!</p>
+              </div>
+              <div class="menu-item">
+                <h4>Mozzarella Sticks</h4>
+                <span class="price">8.95</span>
+                <p class="desc">Served with marinara sauce.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Jalapeño Poppers</h4>
+                <span class="price">7.95</span>
+                <p class="desc">Served with ranch.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Pizza Roll-Ups</h4>
+                <span class="price">11.95</span>
+                <p class="desc">Served with marinara.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Classic Bruschetta</h4>
+                <span class="price">8.95</span>
+                <p class="desc">Tomato, basil, and garlic on toasted crostini.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Crispy Calamari Rings</h4>
+                <span class="price">11.95</span>
+                <p class="desc">Served with house aioli mayo.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Fried Pickles</h4>
+                <span class="price">10.95</span>
+                <p class="desc">Crispy &amp; tangy.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Crab Cakes</h4>
+                <span class="price">13.95</span>
+                <p class="desc">Three crab cakes served with cajun aioli.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Stuffed Quesadilla</h4>
+                <span class="price">14.95</span>
+                <p class="desc">Chicken or pork, mixed shredded cheese, fresh jalapeños, sour cream. Steak +2 · Guacamole +2.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Nacho Platter</h4>
+                <span class="price">13.95</span>
+                <p class="desc">Chicken or pork with jalapeños, sour cream and guacamole!</p>
+              </div>
+              <div class="menu-item">
+                <h4>Wings</h4>
+                <span class="price">11.95</span>
+                <p class="desc">7 wings — Traditional Buffalo, Garlic Jalapeño, Spicy BBQ, Mango Habanero or Chipotle. One dipping sauce.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BURGERS -->
+        <div class="menu-category" id="burgers" role="tabpanel" hidden>
+          <div class="menu-category-block">
+            <h2>Flight Path Burgers</h2>
+            <p class="cat-note">Served with fries. Sub onion rings or garlic fries +1.50 · Bacon +2 · Fried egg +1.50 · Jalapeños +1</p>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <h4>Hamburger</h4>
+                <span class="price">11.95</span>
+                <p class="desc">Lettuce, tomato, onion, and mayo.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Cheeseburger</h4>
+                <span class="price">12.95</span>
+                <p class="desc">Swiss, pepper jack, cheddar, or American — plus LTO &amp; mayo.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Mushroom &amp; Swiss</h4>
+                <span class="price">14.95</span>
+                <p class="desc">Mushrooms sautéed with garlic butter, topped with Swiss.</p>
+              </div>
+              <div class="menu-item">
+                <h4>BBQ Bacon Burger</h4>
+                <span class="price">15.95</span>
+                <p class="desc">Cheddar, bacon, BBQ sauce, mayo, crowned with an onion ring.</p>
+              </div>
+              <div class="menu-item">
+                <h4>California Burger</h4>
+                <span class="price">14.95</span>
+                <p class="desc">Guacamole, bacon &amp; pepper jack cheese.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Salmon Burger</h4>
+                <span class="price">14.95</span>
+                <p class="desc">Ciabatta roll, house aioli mayo, lettuce, and tomato.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Pesto Chicken Burger</h4>
+                <span class="price">12.95</span>
+                <p class="desc">Mozzarella, lettuce &amp; tomato.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Burger Dip</h4>
+                <span class="price">14.95</span>
+                <p class="desc">Beef patty, grilled onions, horseradish, served with au jus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PASTA -->
+        <div class="menu-category" id="pasta" role="tabpanel" hidden>
+          <div class="menu-category-block">
+            <h2>Pasta Specialties</h2>
+            <p class="cat-note">Twirl that fork!</p>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <h4>Grilled Chicken Alfredo</h4>
+                <span class="price">13.95</span>
+                <p class="desc">Fettuccine, creamy garlic sauce, grilled chicken &amp; parmesan.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Spicy Marinara Spaghetti</h4>
+                <span class="price">12.95</span>
+                <p class="desc">House-made spicy sauce &amp; parmesan.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Fettuccine Carbonara</h4>
+                <span class="price">15.95</span>
+                <p class="desc">Bacon, egg &amp; onion in a light cream sauce.</p>
+              </div>
+              <div class="menu-item">
+                <h4>West 5 Mac ’n Cheese</h4>
+                <span class="price">14.95</span>
+                <p class="desc">Signature dish featuring five cheeses baked to order.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SANDWICHES -->
+        <div class="menu-category" id="sandwiches" role="tabpanel" hidden>
+          <div class="menu-category-block">
+            <h2>Signature Sandwiches &amp; Wraps</h2>
+            <p class="cat-note">Served with fries. Sub onion rings or garlic fries for a small charge.</p>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <h4>BLT</h4>
+                <span class="price">13.95</span>
+                <p class="desc">Crispy bacon, lettuce, tomato and mayo.</p>
+              </div>
+              <div class="menu-item">
+                <h4>French Dip</h4>
+                <span class="price">13.95</span>
+                <p class="desc">Thin sliced beef &amp; horseradish served with au jus.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Philly Cheesesteak</h4>
+                <span class="price">13.95</span>
+                <p class="desc">Steak, onions, green peppers, and provolone.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Turkey Bacon Avocado</h4>
+                <span class="price">14.95</span>
+                <p class="desc">Turkey, bacon, guacamole, mayo, lettuce, tomato &amp; pepper jack.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Chipotle Chicken &amp; Bacon</h4>
+                <span class="price">13.95</span>
+                <p class="desc">Chicken, bacon, cheddar, chipotle sauce, and onions.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Chicken Stacker</h4>
+                <span class="price">14.95</span>
+                <p class="desc">Chicken, bacon, lettuce, tomato, mayo, ranch &amp; provolone.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Fried Chicken Sandwich</h4>
+                <span class="price">12.95</span>
+                <p class="desc">Lettuce, tomato, mayo and crispy chicken patty.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Buffalo Chicken Wrap</h4>
+                <span class="price">9.95</span>
+                <p class="desc">Crispy chicken, cheddar, romaine and buffalo sauce.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Chicken Caesar Wrap</h4>
+                <span class="price">9.95</span>
+                <p class="desc">Grilled chicken, romaine, caesar dressing and parmesan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BASKETS -->
+        <div class="menu-category" id="baskets" role="tabpanel" hidden>
+          <div class="menu-category-block">
+            <h2>Baskets &amp; Plates</h2>
+            <p class="cat-note">Shareable or solo — either way, good call.</p>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <h4>Shrimp Basket</h4>
+                <span class="price">11.95</span>
+                <p class="desc">Crunchy shrimp and fries with cocktail sauce.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Chicken Strips Basket</h4>
+                <span class="price">11.95</span>
+                <p class="desc">Classic strips. Buffalo style +0.50.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Fish &amp; Chips Basket</h4>
+                <span class="price">14.95</span>
+                <p class="desc">Wild-caught &amp; battered with house-made tartar sauce.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Classic Street Tacos</h4>
+                <span class="price">10.95</span>
+                <p class="desc">Warm white corn tortillas — chicken tinga, braised pork, carne asada (+1), or chorizo. Onion &amp; cilantro.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SALADS -->
+        <div class="menu-category" id="salads" role="tabpanel" hidden>
+          <div class="menu-category-block">
+            <h2>House Salads</h2>
+            <p class="cat-note">Fresh greens when you need a reset.</p>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <h4>Side Salad</h4>
+                <span class="price">6.95</span>
+                <p class="desc">Mushrooms, onion, tomato &amp; cheese with choice of dressing.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Chicken Caesar Salad</h4>
+                <span class="price">11.95</span>
+                <p class="desc">Parmesan, caesar dressing, croutons, and a slice of lemon.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Salmon Caesar Salad</h4>
+                <span class="price">15.95</span>
+                <p class="desc">Our house caesar with grilled Pacific salmon.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FLATBREADS -->
+        <div class="menu-category" id="flatbreads" role="tabpanel" hidden>
+          <div class="menu-category-block">
+            <h2>Baked Flatbreads</h2>
+            <p class="cat-note">Crispy crusts, bold toppings.</p>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <h4>Chicken Pesto Flatbread</h4>
+                <span class="price">12.95</span>
+                <p class="desc">Pesto sauce, mozzarella, and grilled chicken breast.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Pepperoni Flatbread</h4>
+                <span class="price">12.95</span>
+                <p class="desc">Pepperoni, fresh marinara and mozzarella.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Spicy BBQ Flatbread</h4>
+                <span class="price">12.95</span>
+                <p class="desc">Spicy BBQ sauce, mozzarella, and crispy chicken.</p>
+              </div>
+              <div class="menu-item">
+                <h4>Chorizo Jalapeño Flatbread</h4>
+                <span class="price">12.95</span>
+                <p class="desc">Chorizo, marinara, mozzarella &amp; jalapeños.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="menu-note">
+          <strong>Note:</strong> Prices and items may change. Call
+          <a href="tel:+12067517861" style="color: var(--amber);">(206) 751-7861</a>
+          for current specials, allergen info, or large-party planning.
+        </p>
+
+        <div style="margin-top: 2.5rem; text-align: center;">
+          <a class="btn btn-ghost" href="index.html">← Back to Home</a>
+          <a class="btn btn-primary" href="index.html#visit" style="margin-left: 0.75rem;">Get Directions</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">
+            Flight Path
+            <small>Burien, WA</small>
+          </div>
+          <p>Local beers, solid food, live entertainment, and games — the Burien neighborhood bar that does it all.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="index.html#about">About</a>
+          <a href="index.html#beer">Beer</a>
+          <a href="menu.html">Full Menu</a>
+          <a href="index.html#entertainment">Entertainment</a>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <p>1832 S 120th St</p>
+          <p>Burien, WA 98168</p>
+          <a href="tel:+12067517861">(206) 751-7861</a>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <a href="https://www.facebook.com/flightpathburien" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/flightpathburien/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2012 – 2026 Flight Path · Burien, WA</span>
+        <span>Redesign concept · All rights reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

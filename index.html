@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flight Path Redesigns · Compare Versions</title>
+  <meta name="description" content="Compare Flight Path Burien website redesigns and logo animation options inspired by the Sea-Tac flight path." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f0e0d;
+      --card: #1a1816;
+      --cream: #f3ebe0;
+      --muted: #a89c8e;
+      --amber: #e8a317;
+      --line: rgba(243, 235, 224, 0.1);
+      --cyan: #2de2e6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "DM Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--cream);
+      min-height: 100vh;
+      line-height: 1.55;
+      padding: 2.5rem 1.25rem 3rem;
+    }
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.8rem);
+      letter-spacing: 0.04em;
+      line-height: 0.95;
+      margin-bottom: 0.75rem;
+    }
+    h1 span { color: var(--amber); }
+    .lead {
+      color: var(--muted);
+      max-width: 38rem;
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+    }
+    .section-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 2.75rem 0 1.15rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+    }
+    .section-head:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+    .section-head h2 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      letter-spacing: 0.05em;
+      font-weight: 400;
+    }
+    .section-head p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 28rem;
+    }
+    .plaque {
+      background: linear-gradient(145deg, rgba(232, 163, 23, 0.08), rgba(26, 24, 22, 0.9));
+      border: 1px solid rgba(232, 163, 23, 0.28);
+      border-radius: 16px;
+      padding: 1.35rem 1.35rem 1.5rem;
+      margin-bottom: 1.25rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.15rem;
+      align-items: center;
+    }
+    .plaque img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #fff;
+      object-fit: cover;
+      box-shadow: 0 0 24px rgba(232, 163, 23, 0.2);
+    }
+    .plaque h3 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 1.55rem;
+      letter-spacing: 0.06em;
+      font-weight: 400;
+      margin-bottom: 0.35rem;
+      color: var(--amber);
+    }
+    .plaque p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      max-width: 40rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 720px) {
+      .grid { grid-template-columns: repeat(3, 1fr); }
+      .grid.four { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 900px) {
+      .grid.four { grid-template-columns: repeat(4, 1fr); }
+    }
+    a.card {
+      display: flex;
+      flex-direction: column;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+      min-height: 200px;
+    }
+    a.card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(232, 163, 23, 0.35);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+    }
+    a.card.anim:hover {
+      border-color: rgba(45, 226, 230, 0.4);
+    }
+    .tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--amber);
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+    }
+    a.card.anim .tag {
+      color: var(--cyan);
+    }
+    .card h2,
+    .card h3 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 1.65rem;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.6rem;
+      font-weight: 400;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      flex: 1;
+    }
+    .card .go {
+      margin-top: 1.25rem;
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--amber);
+    }
+    a.card.anim .go {
+      color: var(--cyan);
+    }
+    .note {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    @media (max-width: 520px) {
+      .plaque {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Flight Path <span>Redesigns</span></h1>
+    <p class="lead">
+      Compare site redesigns and logo intro animations. Named for the Sea-Tac corridor that passes over this Burien bar.
+    </p>
+
+    <div class="section-head">
+      <div>
+        <h2>Site versions</h2>
+        <p>Full homepage redesigns — pick a look for the bar site.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <a class="card" href="v1/index.html">
+        <div class="tag">Version 1</div>
+        <h2>Original redesign</h2>
+        <p>Dark night-bar theme with amber runway accents. First full redesign build.</p>
+        <div class="go">Open v1 →</div>
+      </a>
+      <a class="card" href="v2/index.html">
+        <div class="tag">Version 2</div>
+        <h2>Polished fix</h2>
+        <p>Same design language as v1, with scroll cue under contact info and stronger mobile responsiveness.</p>
+        <div class="go">Open v2 →</div>
+      </a>
+      <a class="card" href="v3/index.html">
+        <div class="tag">Version 3</div>
+        <h2>Neon grunge dive</h2>
+        <p>Hot pink / cyan neon glow, film grain, sticker energy — raw dive-bar vibes.</p>
+        <div class="go">Open v3 →</div>
+      </a>
+    </div>
+
+    <div class="section-head">
+      <div>
+        <h2>Logo animation</h2>
+        <p>Intro concepts using the old plane mark — compare before we lock one in.</p>
+      </div>
+    </div>
+
+    <div class="plaque">
+      <img src="logo-anim/plane.png" alt="Airplane silhouette" width="120" height="90" style="width:120px;height:auto;border-radius:0;background:transparent;box-shadow:none;filter:drop-shadow(0 0 10px rgba(232,163,23,0.35));" />
+      <div>
+        <h3>Why a flight path?</h3>
+        <p>
+          The bar sits under the approach/departure corridor from Sea-Tac. Planes are a recurring part of the neighborhood —
+          the name isn’t random, it’s geography. Previews use a cleaned side-view jet silhouette (watermarks removed).
+        </p>
+      </div>
+    </div>
+
+    <div class="grid four">
+      <a class="card anim" href="logo-anim/a-overflight.html">
+        <div class="tag">Option A</div>
+        <h3>Overflight</h3>
+        <p>Jet rides a dashed corridor, grows as it passes overhead, name sits under the path.</p>
+        <div class="go">Preview A →</div>
+      </a>
+      <a class="card anim" href="logo-anim/b-runway-approach.html">
+        <div class="tag">Option B</div>
+        <h3>Runway approach</h3>
+        <p>Runway rushes toward you; jet comes in on approach; title lands.</p>
+        <div class="go">Preview B →</div>
+      </a>
+      <a class="card anim" href="logo-anim/c-corridor-radar.html">
+        <div class="tag">Option C</div>
+        <h3>Corridor radar</h3>
+        <p>ATC-style ring and sweep; a jet blip tracks the corridor, then holds center.</p>
+        <div class="go">Preview C →</div>
+      </a>
+      <a class="card anim" href="logo-anim/d-low-pass.html" style="border-color: rgba(45, 226, 230, 0.55); box-shadow: 0 0 0 1px rgba(45,226,230,0.2);">
+        <div class="tag">Option D · Active intro</div>
+        <h3>Low-pass loop</h3>
+        <p>Recurring high flybys (Sea-Tac traffic), then one big low pass and the name. Now live on v1 / v2 / v3.</p>
+        <div class="go">Preview D →</div>
+      </a>
+    </div>
+
+    <p class="note">
+      Source content based on flightpathburien.com · Concept redesigns only · Logo previews ~5s · Press R or Replay to rewatch
+    </p>
+  </div>
+</body>
+</html>

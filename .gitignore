@@ -1,0 +1,14 @@
+﻿# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.idea/
+.vscode/
+*.swp
+
+# Temp / local
+_patch_*.py
+_make_*.py
+_clean_*.py
+logo-anim/ref/

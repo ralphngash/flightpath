@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logo Anim A · Overflight | Flight Path</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+</head>
+<body>
+  <div id="stage" class="stage anim-a">
+    <div class="stage-label">Option A · Overflight</div>
+    <a class="back-link" href="../index.html">← All options</a>
+
+    <svg class="sky-path" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M 2 18 C 28 22, 38 40, 50 42 C 62 44, 72 22, 98 14" />
+    </svg>
+    <div class="ground-glow" aria-hidden="true"></div>
+
+    <div class="flyer" aria-hidden="true">
+      <img class="jet jet-side" src="plane.png" alt="" width="320" height="240" />
+    </div>
+
+    <div class="title-block">
+      <h1>Flight Path</h1>
+      <p>Under the Sea-Tac flight path · Burien, WA</p>
+    </div>
+
+    <p class="hint">5s preview · Press R to replay</p>
+    <div class="controls">
+      <button type="button" id="replay">Replay</button>
+    </div>
+  </div>
+  <script src="shared.js"></script>
+</body>
+</html>
