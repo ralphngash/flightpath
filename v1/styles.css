@@ -203,17 +203,36 @@ ul {
   height: var(--header-h);
   display: flex;
   align-items: center;
-  transition: background 0.35s, border-color 0.35s, backdrop-filter 0.35s;
+  transition: border-color 0.35s;
   border-bottom: 1px solid transparent;
+  /* blur lives on ::before — backdrop-filter on the header itself
+     traps position:fixed .nav inside the header after scroll */
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgba(12, 11, 10, 0.88);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  opacity: 0;
+  transition: opacity 0.35s;
+  pointer-events: none;
 }
 
 .site-header.scrolled {
-  background: rgba(12, 11, 10, 0.88);
-  backdrop-filter: blur(16px);
   border-bottom-color: var(--border-soft);
 }
 
+.site-header.scrolled::before {
+  opacity: 1;
+}
+
 .header-inner {
+  position: relative;
+  z-index: 2;
   width: min(100% - 2rem, var(--max));
   margin-inline: auto;
   display: flex;
@@ -1211,7 +1230,11 @@ ul {
   .nav {
     position: fixed;
     inset: 0;
+    width: 100vw;
+    height: 100dvh;
+    height: 100vh;
     background: rgba(12, 11, 10, 0.97);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     flex-direction: column;
     justify-content: center;
@@ -1220,12 +1243,19 @@ ul {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s;
-    z-index: 1000;
+    z-index: 1100;
+    padding: 5rem 1.5rem 2rem;
+    overflow-y: auto;
   }
 
   .nav.open {
     opacity: 1;
     pointer-events: auto;
+  }
+
+  .nav-toggle {
+    position: relative;
+    z-index: 1200;
   }
 
   .nav a {
